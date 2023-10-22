@@ -1,11 +1,6 @@
-:root {
-  --white-color: white;
-  --dark-blue-color: #072541;
-  --light-blue-color: #eef9fd;
-  --very-light-green-color: #c1d8c3;
-  --light-green-color: #6a9c89;
-  --border-radius: 30px;
-}
+@import url('variables.css');
+@import url('form.css');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 body {
   color: var(--dark-blue-color);
@@ -145,15 +140,29 @@ body {
   background-color: #072541;
 }
 
-.contact-form {
+.contact-form,
+.form {
   background-color: var(--light-blue-color);
   border-radius: var(--border-radius);
+  background: linear-gradient(
+    135deg,
+    var(--light-blue-color),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1px solid var(--light-blue-color);
+  box-shadow: 0 8px 32px 0 var(--light-green-color);
 }
 
 .contact-thanks {
   background-color: var(--dark-blue-color);
   color: white;
   border-radius: 50px;
+}
+
+.btn-center {
+  text-align: center;
 }
 
 #footer {
