@@ -1,0 +1,170 @@
+:root {
+  --white-color: white;
+  --dark-blue-color: #072541;
+  --light-blue-color: #eef9fd;
+  --very-light-green-color: #c1d8c3;
+  --light-green-color: #6a9c89;
+  --border-radius: 30px;
+}
+
+body {
+  color: var(--dark-blue-color);
+}
+
+.zig-zag {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  background-image: linear-gradient(
+    225deg,
+    var(--very-light-green-color) 40%,
+    var(--light-blue-color) 25%
+  );
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+
+.nav-link {
+  color: var(--dark-blue-color);
+  font-size: large;
+}
+
+.nav-link:hover {
+  transform: scale(1.01, 1.01);
+  color: var(--dark-blue-color);
+}
+.nav {
+  padding: 4% 5%;
+}
+
+.split {
+  float: left;
+  font-size: x-large;
+}
+
+.index-tag-line {
+  margin: 1% 6%;
+  font-size: larger;
+}
+
+.index-tag-line-heading {
+  font-size: 300%;
+  margin: 1.001% 0;
+}
+
+/* .index-tag-line-heading span {
+  background-color: var(--light-blue-color);
+} */
+
+.index-tag-line-para {
+  width: 30%;
+  text-align: justify;
+}
+
+::selection {
+  background-color: var(--light-green-color);
+}
+
+.btn-classic {
+  background-color: var(--light-green-color);
+  border-radius: var(--border-radius);
+}
+
+.btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.font-pacifico {
+  font-family: 'Pacifico';
+}
+
+.section {
+  margin: 5% 0;
+}
+
+.section h3 {
+  text-align: center;
+}
+
+#about {
+  margin-top: 15%;
+}
+
+.about-icon {
+  text-align: right;
+  padding: 2%;
+  padding-right: 5%;
+  margin: 2% 0;
+}
+
+.about-text {
+  border-style: none;
+  font-size: larger;
+  font-weight: normal;
+  margin: 2% 0;
+  background-color: inherit;
+  text-align: justify;
+}
+
+.container {
+  margin: 2%;
+}
+
+.about-container {
+  background-color: var(--light-blue-color);
+  width: 50%;
+  margin: auto;
+  padding: 2% 2%;
+  border-radius: var(--border-radius);
+}
+
+.carousel {
+  width: 50%;
+  margin: auto;
+  background-color: var(--very-light-green-color);
+  border-radius: var(--border-radius);
+}
+
+.carousel-item p {
+  padding: 5% 10%;
+  font-style: italic;
+}
+
+.quotation-mark {
+  font-weight: bolder;
+  font-size: xx-large;
+  font-style: italic;
+}
+
+.carousel-item img {
+  margin: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #072541;
+}
+
+.contact-form {
+  background-color: var(--light-blue-color);
+  border-radius: var(--border-radius);
+}
+
+.contact-thanks {
+  background-color: var(--dark-blue-color);
+  color: white;
+  border-radius: 50px;
+}
+
+#footer {
+  background-color: var(--light-green-color);
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
+
+@media screen and (max-width: 576px) {
+  .about-icon {
+    text-align: center;
+  }
+}

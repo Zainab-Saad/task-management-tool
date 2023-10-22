@@ -10,8 +10,233 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tilt+Neon"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
+    <div class="zig-zag">
+      <ul class="nav d-sm-flex split">
+        <li class="split">
+          <a class="nav-link font-pacifico" href="">e-Task Manager</a>
+        </li>
+      </ul>
+      <ul class="nav d-sm-flex justify-content-end">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonial">Testimonial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=""
+            ><button class="btn btn-classic">LOGIN</button></a
+          >
+        </li>
+      </ul>
+      <div class="index-tag-line">
+        <h3 class="index-tag-line-heading"><span>Achieve More.</span></h3>
+        <h3 class="index-tag-line-heading"><span>In Less Time.</span></h3>
+        <h3 class="index-tag-line-heading"><span>Anywhere.</span></h3>
+        <p class="index-tag-line-para">
+          Revolutionizing the way <span class="font-pacifico">YOU</span> manage
+          your tasks, maximizing flexibility, efficiency and productivity
+        </p>
+        <a href=""><button class="btn btn-classic">Start Now</button></a>
+      </div>
+      <section id="about" class="section">
+        <h3>About Us</h3>
+        <div class="container about-container">
+          <div class="row">
+            <div class="about-icon col-sm-6">
+              <i
+                class="fa-solid fa-list-check fa-8x"
+                style="color: #072541"
+              ></i>
+            </div>
+            <div class="about-text card col-sm-6">
+              <div class="card-body">
+                You can simply and easily update the status of your tasks online
+                — our cloud based software allows you to login from anywhere, on
+                any device. You can then attach notes, files and links to easily
+                track comments and document handoffs. Have discussions about
+                tasks and collaborate in real time.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial" class="section">
+        <h3>Testimonials</h3>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>
+                <span class="quotation-mark font-pacifico">"</span>
+                I've been using this task manager website for a while now, and
+                it has transformed the way I work. The collaboration features
+                are fantastic, and it keeps me and my team on the same page.
+                Highly recommended for any professional!
+                <span class="quotation-mark font-pacifico">"</span>
+              </p>
+              <img
+                src="./assets/testimonial-1.avif"
+                class="d-block w-50 h-50"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <p>
+                <span class="quotation-mark font-pacifico">"</span>
+                I've tried several task manager apps, but this website is a
+                game-changer. Its simplicity and intuitive interface make
+                managing my tasks a breeze. I'm more organized and productive
+                than ever! <span class="quotation-mark font-pacifico">"</span>
+              </p>
+              <img
+                src="./assets/testimonial-2.jpg"
+                class="d-block w-50 h-50"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <p>
+                <span class="quotation-mark font-pacifico">"</span>
+                I can't thank this task manager website enough for helping me
+                regain control over my life. It's not just about tasks; it's a
+                stress-reliever. The due date reminders and prioritization tools
+                have made a significant difference. A must-try for anyone
+                feeling overwhelmed!
+                <span class="quotation-mark font-pacifico">"</span>
+              </p>
+              <img
+                src="./assets/testimonial-3.avif"
+                class="d-block w-50 h-50"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <h3>Let's Connect</h3>
+        <div class="container-sm">
+          <div class="row">
+            <div class="card col-sm-6 contact-form d-flex justify-content-end">
+              <div class="card-body">
+                <form action="">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Name</label
+                    >
+                    <input
+                      type="input"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="My Name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Messafe</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="card col-sm-6 contact-thanks d-flex justify-content-end"
+            >
+              <div class="card-body">
+                <h2>Thank You For Choosing Us!</h2>
+                <hr />
+                <p>We will be in touch shortly ✨</p>
+                <p>
+                  Your satisfaction is our top priority, and we're dedicated to
+                  delivering quality, reliability, and a seamless experience. We
+                  look forward to a long and successful relationship with you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer" class="font-pacifico">
+        <h3>e-Task Manager</h3>
+        <p>We value you!</p>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
