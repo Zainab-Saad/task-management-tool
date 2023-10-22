@@ -32,10 +32,10 @@ button.addEventListener('click', () => {
 
   if (newTheme === 'light') {
     console.log('heyyyyyyyyyyyy');
-    themeIcon.className = 'fa-solid fa-toggle-off fa-3x theme-icon';
+    themeIcon.className = 'fa-solid fa-toggle-off fa-2x theme-icon';
   } else if (newTheme === 'dark') {
     console.log('heheh');
-    themeIcon.className = 'fa-solid fa-toggle-on fa-3x theme-icon';
+    themeIcon.className = 'fa-solid fa-toggle-on fa-2x theme-icon';
   }
 
   // update theme attribute on HTML to switch theme in CSS
