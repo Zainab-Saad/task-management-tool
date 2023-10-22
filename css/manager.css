@@ -1,0 +1,13 @@
+.tasks-list {
+  margin: 5% 10% 5% 10%;
+  padding: 0;
+}
+
+.card {
+  background-color: var(--white-color);
+}
+
+.list-group-item {
+  background-color: var(--very-light-green-color);
+  color: #072541;
+}

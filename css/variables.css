@@ -1,8 +1,19 @@
 :root {
+  --border-radius: 30px;
+}
+
+[data-theme='light'] {
   --white-color: white;
   --dark-blue-color: #072541;
   --light-blue-color: #eef9fd;
   --very-light-green-color: #c1d8c3;
   --light-green-color: #6a9c89;
-  --border-radius: 30px;
+}
+
+[data-theme='dark'] {
+  --white-color: #242526;
+  --dark-blue-color: white;
+  --light-blue-color: #ef036c;
+  --very-light-green-color: #fae6a5;
+  --light-green-color: #faa5c2;
 }

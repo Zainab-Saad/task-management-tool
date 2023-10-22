@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,16 +11,24 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
-    <ul class="nav d-sm-flex split">
+    <ul class="nav d-sm-flex">
       <li class="split">
         <a class="nav-link font-pacifico" href="../index.html">e-Task Manager</a>
+
       </li>
+      <button
+    type="button"
+    data-theme-toggle <i class="fa-solid fa-toggle-off fa-3x theme-icon"></i></button>
     </ul>
     <div class="container-sm">
       <div class="row login">
-        <div class="card col form">
+        <div class="card col form-sm">
           <div class="card-body">
             <h3>Login</h3>
             <form action="">
@@ -47,9 +55,7 @@
                 />
               </div>
               <div class="btn-center">
-                <a class="nav-link" href=""
-              ><button class="btn btn-classic">LOGIN</button></a
-            >
+                <button class="btn btn-classic btn-sm"><a class="nav-link" href="./manager.html">LOGIN</a></button>
               </div>
             </form>
           </div>
@@ -60,5 +66,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

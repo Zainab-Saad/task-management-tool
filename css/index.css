@@ -1,15 +1,20 @@
 @import url('variables.css');
 @import url('form.css');
+@import url('manager.css');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 body {
   color: var(--dark-blue-color);
+  background-color: var(--white-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .zig-zag {
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--white-color);
   background-image: linear-gradient(
     225deg,
     var(--very-light-green-color) 40%,
@@ -44,7 +49,7 @@ body {
 
 .index-tag-line-heading {
   font-size: 300%;
-  margin: 1.001% 0;
+  margin: 2% 0;
 }
 
 /* .index-tag-line-heading span {
@@ -123,6 +128,7 @@ body {
 .carousel-item p {
   padding: 5% 10%;
   font-style: italic;
+  color: #072541;
 }
 
 .quotation-mark {
@@ -141,7 +147,7 @@ body {
 }
 
 .contact-form,
-.form {
+.form-sm {
   background-color: var(--light-blue-color);
   border-radius: var(--border-radius);
   background: linear-gradient(
@@ -156,7 +162,7 @@ body {
 }
 
 .contact-thanks {
-  background-color: var(--dark-blue-color);
+  background-color: #072541;
   color: white;
   border-radius: 50px;
 }
@@ -165,15 +171,51 @@ body {
   text-align: center;
 }
 
+.btn-right {
+  text-align: right;
+}
+
+.card {
+  border: none;
+}
+
+.theme-icon {
+  background: none;
+  border: none;
+  color: var(--dark-blue-color);
+}
+
 #footer {
   background-color: var(--light-green-color);
-  color: white;
+  color: var(--white-color);
   text-align: center;
   padding: 5%;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 576px) {
   .about-icon {
     text-align: center;
+  }
+
+  .contact-thanks {
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    border-radius: 50px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  .contact-form {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 1px 8px 0 var(--light-green-color);
+    backdrop-filter: none;
+  }
+
+  .form-sm {
+    box-shadow: 0 1px 8px 0 var(--light-green-color);
+    backdrop-filter: none;
   }
 }
